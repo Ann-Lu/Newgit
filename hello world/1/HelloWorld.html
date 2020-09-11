@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="cn">
 
 <head>
     <meta charset="utf-8">
@@ -9,17 +9,18 @@
                 color:red;
             } 
     </style>
-    <script type="javascript">
-        function recover() {
-            document.getElementsById(hw).style.color = '';
-        }
-    </script>
+
 </head>
 
 <body>
     <h1 id="hw">Hello World</h1>
-    <input type="button" onclick='getElementsById(hw).className="red";'  value="change"/>
-    <button onclick="recover()" type="button">recover</button>
+    <input type="button" onclick='getElementsById("hw").style.color="red"'  value="变色"/>
+    <button onclick="recover()" type="button">恢复</button>
+    <script type="text/javascript">
+        function recover() {
+            document.getElementsById("hw").style.color = '';
+        }
+    </script>
 </body>
 
 </html>
