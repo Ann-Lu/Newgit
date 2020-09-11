@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>hello world</title>
+    <style>
+         .red {
+                color:red;
+            } 
+    </style>
+    <script type="javascript">
+        function recover() {
+            document.getElementsById(hw).style.color = '';
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="hw">Hello World</h1>
+    <input type="button" onclick='getElementsById(hw).className="red";'  value="change"/>
+    <button onclick="recover()" type="button">recover</button>
+</body>
+
+</html>
